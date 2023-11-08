@@ -1,0 +1,34 @@
+
+{chance=60%, name='Кукла'}
+{chance=60%, name='Кукла'}
+{chance=20%, name='Конструктор'}
+{chance=20%, name='Робот'}
+{chance=40%, name='Кукла2'}
+{chance=40%, name='Кукла2'}
+{chance=30%, name='Робот2'}
+{chance=40%, name='Робот3'}
+{chance=40%, name='Конструктор3'}
+{chance=40%, name='Конструктор3'}
+*****************
+{chance=60%, name='Кукла'}
+{chance=60%, name='Кукла'}
+{chance=60%, name='Кукла'}
+{chance=20%, name='Робот'}
+{chance=40%, name='Кукла2'}
+{chance=40%, name='Кукла2'}
+{chance=30%, name='Конструктор2'}
+{chance=40%, name='Робот3'}
+{chance=40%, name='Конструктор3'}
+{chance=40%, name='Робот3'}
+*****************
+{chance=60%, name='Кукла'}
+{chance=60%, name='Кукла'}
+{chance=60%, name='Кукла'}
+{chance=20%, name='Робот'}
+{chance=40%, name='Кукла2'}
+{chance=40%, name='Кукла2'}
+{chance=40%, name='Кукла2'}
+{chance=40%, name='Конструктор3'}
+{chance=40%, name='Робот3'}
+{chance=40%, name='Конструктор3'}
+*****************
