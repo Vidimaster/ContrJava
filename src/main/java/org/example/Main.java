@@ -9,6 +9,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Random ran = new Random();
 
+        // В три массива записываются игрушки с разным весом
+
         List<Toy> ToyArray1 = new ArrayList<Toy>();
         ToyArray1.add(new Toy(1, 20, "Конструктор"));
         ToyArray1.add(new Toy(2, 20, "Робот"));
@@ -25,9 +27,16 @@ public class Main {
         ToyArray3.add(new Toy(3, 10, "Кукла3"));
         ToyArray3.add(new Toy(4, 10, "Кукла4"));
 
+        // Игрушки тасуются перед дальнейшим случайным выбором
+
         Collections.shuffle(ToyArray1);
         Collections.shuffle(ToyArray2);
         Collections.shuffle(ToyArray3);
+
+        //В приоритетные очереди случайно помещаются игрушки согласно весу, в таких очередях приоритет задаётся либо
+        // весом через сортировку компаратором и случайным числом,
+        // либо порядком помещения в очередь (при одинаковом весе),
+        // поэтому они также тасуются перед каждым случайным выбором для перестановки игрушек с одинаковым весом
 
         PriorityQueue<Toy> pq1 = new PriorityQueue<Toy>(4, new ToyComparator());
         PriorityQueue<Toy> pq2 = new PriorityQueue<Toy>(3, new ToyComparator());
@@ -54,6 +63,8 @@ public class Main {
         Collections.shuffle(ToyArray3);
         GetRandom(ToyArray3, ran.nextInt(1, 100), pq3);
         Collections.shuffle(ToyArray3);
+
+        //Все игрушки помещаются в общую очередь из результирующих приоритетных очередей и записываются в файл
 
         Queue<String> queue = new LinkedList<String>();
 
